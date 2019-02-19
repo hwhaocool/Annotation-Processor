@@ -1,0 +1,35 @@
+apply plugin: 'java'
+//apply plugin: 'maven'
+
+group = 'com.yellow'
+version = '1.0'
+
+description = """"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+
+
+repositories {
+        
+        //本地仓库地址，可随意修改
+        maven {
+            name = "local"
+            url =  "D:/003-tool/004-maven/maven_repo"
+        }
+}
+dependencies {
+    //注解所在的包
+    compile group: 'com.yellow', name: 'skmr-proceesor', version:'1.6'
+    
+    //注解处理器所在的包
+    annotationProcessor 'com.yellow:skmr-proceesor:1.6'
+}
+compileJava.options.compilerArgs << "-processor" << "com.yellow.anno.process.BIdProcessor"
+
+//测试 javax.annotation.processing.Processor 文件存在与否 对 调用注解处理器的影响
+//compileJava.options.compilerArgs << "-processor" << "com.yellow.anno.process.IdProcessor2"
