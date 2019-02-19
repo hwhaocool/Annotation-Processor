@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.yellow</groupId>
-    <artifactId>skmr-doc</artifactId>
+    <artifactId>yellow-doc</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
@@ -32,7 +32,7 @@
               <annotationProcessorPaths>
                 <path>
                   <groupId>com.yellow</groupId>
-                  <artifactId>skmr-proceesor</artifactId>
+                  <artifactId>yellow-proceesor</artifactId>
                   <version>1.6</version>
                 </path>
                 <!-- ... more ... -->
@@ -50,15 +50,10 @@
   </build>
 
     <dependencies>
-       <!-- <dependency>
-            <groupId>com.yellow</groupId>
-            <artifactId>skmr-ana</artifactId>
-            <version>1.0</version>
-        </dependency> -->
         
         <dependency>
             <groupId>com.yellow</groupId>
-            <artifactId>skmr-proceesor</artifactId>
+            <artifactId>yellow-proceesor</artifactId>
             <version>1.6</version>
         </dependency>
 
