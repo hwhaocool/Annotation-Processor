@@ -2,7 +2,7 @@ package com.yellow.doc;
 
 import com.yellow.anno.MyId;
 
-public class Document {
+public class DocumentTemp {
 
     @MyId
     private String name;
