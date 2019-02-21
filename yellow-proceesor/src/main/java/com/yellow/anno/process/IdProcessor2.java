@@ -1,5 +1,8 @@
 package com.yellow.anno.process;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Set;
 
 import javax.annotation.processing.AbstractProcessor;
@@ -90,6 +93,29 @@ public class IdProcessor2 extends AbstractProcessor {
 //        }
 //        classString+="}";
           //System.out.println(classString);
+          
+          FileWriter fileWriter = null;
+          BufferedWriter bufferedWriter = null;
+
+//          try {
+//              fileWriter = new FileWriter(path);
+//              bufferedWriter = new BufferedWriter(fileWriter);
+//
+//              for (String string : arrayList) {
+//                  bufferedWriter.write(string);
+//
+//                  bufferedWriter.newLine();
+//              }
+//
+//          } catch (IOException e1) {
+//              e1.printStackTrace();
+//          } finally {
+//              try {
+//                  bufferedWriter.close();
+//              } catch (IOException e) {
+//                  e.printStackTrace();
+//              }
+//          }
           
         }
         
