@@ -7,7 +7,6 @@ public class DocumentTemp {
     @MyId
     private String name;
     
-    @MyId
     private Integer age;
 
     public String getName() {
