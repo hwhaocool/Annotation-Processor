@@ -34,7 +34,6 @@ public class BIdProcessor extends AbstractProcessor {
         super.init(processingEnv);
         // 初始化Filer和Messager
         this.mFiler = processingEnv.getFiler();
-        this.messager = processingEnv.getMessager();
         
         this.elementUtils = processingEnv.getElementUtils();
     }
